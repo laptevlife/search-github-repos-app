@@ -19,7 +19,7 @@ export const fetchRepos = (pagination?: boolean) => {
             pagination
                 ? dispatch({ type: ActionTypes.FETCH_REPOS_SUCCESS, payload: [...repos, ...response.data] })
                 : dispatch({ type: ActionTypes.FETCH_REPOS_SUCCESS, payload: response.data })
-            history.push('/repos')
+            history.push('/search-github-repos-app/repos')
         } catch (e: any) {
             dispatch({
                 type: ActionTypes.FETCH_REPOS_ERROR,

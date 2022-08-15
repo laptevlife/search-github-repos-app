@@ -16,7 +16,7 @@ const Header: React.FC = () => {
                                 noWrap
                                 component="div"
                                 sx={{ display: { xs: 'none', sm: 'block' } }}
-                                onClick={()=>history.push('/')}
+                                onClick={()=>history.push('/search-github-repos-app')}
                             >
                                 GitApp
                             </Typography>

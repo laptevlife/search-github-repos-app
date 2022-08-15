@@ -25,8 +25,8 @@ const App: React.FC = () => {
       <Wrapper>
         <Router history={history}>
           <Switch >
-            <Route exact path='/' component={HomePage} />
-            <Route path='/repos' component={ReposPage} />
+            <Route exact path='/search-github-repos-app' component={HomePage} />
+            <Route path='/search-github-repos-app/repos' component={ReposPage} />
           </Switch>
         </Router>
       </Wrapper>

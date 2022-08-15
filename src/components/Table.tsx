@@ -22,8 +22,6 @@ function createData(
     return { name, description, language, stars, html_url };
 }
 
-
-
 const NameColumn = styled('span')(({ theme }: { theme: any }) => ({
     cursor: "pointer"
 }));
@@ -34,7 +32,7 @@ export default function DenseTable() {
     const rows = repos.map(i => createData(i.name, i.description, i.language, i.stargazers_count, i.html_url));
 
     useEffect(()=>{
-        !orgName && history.push('/')
+        !orgName && history.push('/search-github-repos-app')
     }, [])
 
     return (
